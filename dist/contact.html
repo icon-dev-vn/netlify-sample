@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DEMO</title>
+</head>
+<body>
+       <form id="form" name="form" action="/thanks" method="post" data-netlify="true" data-netlify-recaptcha="true"
+            netlify-honeypot="bot-field">
+            <p class="hide"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+            <dl>
+              <dt><label for="name" class="required">お名前</label></dt>
+              <dd><input type="text" id="name" name="お名前" placeholder="" autocomplete="off" required></dd>
+              <dt><label for="email" class="required">メールアドレス</label></dt>
+              <dd><input type="email" id="email" name="メールアドレス" placeholder="" autocomplete="off" required></dd>
+              <dt><label for="tel" class="required">電話番号</label></dt>
+              <dd><input type="tel" id="tel" name="電話番号" placeholder="" autocomplete="off" required></dd>
+              <dt><label for="company" class="required">会社名</label></dt>
+              <dd><input type="text" id="company" name="会社名" placeholder="" required></dd>
+              <dt><label for="message">メッセージ</label></dt>
+              <dd><textarea rows="1" cols="50" name="メッセージ" id="message" placeholder=""></textarea></dd>
+            </dl>
+            <div class="recaptcha" data-netlify-recaptcha="true"></div>
+            <p class="contact-more"><button type="submit" class="btn-submit"><span>メッセージを送信</span></button></p>
+          </form>
+</body>
+</html>
